@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import Joke from './joke'
 import Stories from './stories'
+import Tasks from './tasks'
 
 function App() {
   const [ userQuery, setUserQuery ] = useState('')
 
   const updateUserQuery = event => {
-    console.log('userQuery', userQuery)
     setUserQuery(event.target.value)
+    console.log('userQuery', userQuery)
   }
 
   const handleKeyPress = event => {
@@ -24,11 +25,19 @@ function App() {
     <div className="app">
       <h1>Hello Crandall</h1>
       <div className="form">
-        <input value={ userQuery } onChange={ updateUserQuery } onKeyPress={ handleKeyPress } type="text" />
+        <input type="text"
+          value={ userQuery }
+          onChange={ updateUserQuery }
+          onKeyPress={ handleKeyPress }  />
         <button onClick={ searchQuery }>Search</button>
+        {
+          userQuery
+        }
       </div>
       <hr />
       <Joke />
+      <hr/>
+      <Tasks />
       <hr/>
       <Stories />
     </div>

@@ -10,4 +10,5 @@ export const useFetch = (url, initialValue) => {
       .then(json => setResult(json))
   }, [url])
   return result
+  
 }
