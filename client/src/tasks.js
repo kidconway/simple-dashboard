@@ -10,6 +10,7 @@ const storeTasks = taskMap => {
   )
 }
 
+// Utilizes local storage for previous tasks
 const readStoredTasks = () => {
   const tasksMap = JSON.parse(localStorage.getItem( TASKS_STORAGE_KEY ))
 
@@ -25,7 +26,6 @@ function Tasks(){
   useEffect( () => {
     storeTasks({ tasks, completedTasks })
   })
-
 
   const updateTaskText = event => {
     setTaskText(event.target.value)
