@@ -37,9 +37,6 @@ function App() {
           onChange={ updateUserQuery }
           onKeyPress={ handleKeyPress }  />
         <button onClick={ searchQuery }>Search</button>
-        {
-          userQuery
-        }
       </div>
       <hr />
       <Joke />
