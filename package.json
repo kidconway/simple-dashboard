@@ -1,0 +1,19 @@
+{
+  "name": "simple-dashboard",
+  "version": "1.0.0",
+  "description": "Simple React dashboard app that explores React Hooks, has a custom google search, and other weird things",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kidconway/simple-dashboard.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kidconway/simple-dashboard/issues"
+  },
+  "homepage": "https://github.com/kidconway/simple-dashboard#readme"
+}
